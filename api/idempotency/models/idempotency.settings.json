@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idempotencies",
+  "info": {
+    "name": "Idempotency"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "uid"
+    },
+    "order": {
+      "via": "idempotency",
+      "model": "order"
+    }
+  }
+}

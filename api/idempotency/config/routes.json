@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/idempotencies",
+      "handler": "idempotency.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idempotencies/count",
+      "handler": "idempotency.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idempotencies/:id",
+      "handler": "idempotency.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/idempotencies",
+      "handler": "idempotency.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/idempotencies/:id",
+      "handler": "idempotency.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/idempotencies/:id",
+      "handler": "idempotency.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

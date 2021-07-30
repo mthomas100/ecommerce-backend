@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total": {
+      "type": "decimal"
+    },
+    "email": {
+      "type": "email"
+    },
+    "cartContents": {
+      "type": "json"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "stripe_order_id": {
+      "type": "string",
+      "unique": true
+    },
+    "stripe_charge_id": {
+      "type": "string",
+      "unique": true
+    },
+    "stripe_url": {
+      "type": "string",
+      "unique": true
+    },
+    "idempotency": {
+      "model": "idempotency",
+      "via": "order"
+    }
+  }
+}
