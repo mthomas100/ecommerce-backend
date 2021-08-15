@@ -2,4 +2,4 @@
 
 Custom order logic for stripe charge and database entry upon submitted order:
 
-ecommerce-backend/api/order/controllers/order.js
+http://github.com/mthomas100/ecommerce-backend/api/order/controllers/order.js
