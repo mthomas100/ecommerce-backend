@@ -1,3 +1,5 @@
-# Strapi application
+# eCommerce Backend
 
-A quick description of your strapi application
+Custom order logic for stripe charge and database entry upon submitted order:
+
+ecommerce-backend/api/order/controllers/order.js
